@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+
+    <title>SIGN-UP PAGE</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="second-column col-md-6 col-lg-6 col-sm-12">
+                <h2>Welcome <img src="img/image 296.png" alt=""></h2>
+                <p>
+                    You can book any bus to any destination of your choice.
+                </p>
+
+                <div class="googleRegister">
+                    <a class="btn btn-primary" href="#">
+                        <img src="img/flat-color-icons_google.png" class="google">
+                        Register with Google </a>
+                </div>
+
+                <div class="demarcation">
+                    <div class="firstLine"></div>
+                    <span class="or"> or </span>
+                    <div class="secondLine"></div>
+                </div>
+
+                <form action="#" method="post" class="registration">
+                    <div class="mb-3">
+                        <label for="fullname" class="form-label"> Full name </label>
+                        <input class="form-control" name="fullname" placeholder="e.g Mfonabasi Aworekun " type="text"
+                            minlength="8" required>
+                        <span class="text-danger d-none"><i class="fa fa-triangle-exclamation"></i> Name must be at
+                            least 8 characters </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label"> Email address </label>
+                        <input class="form-control" name="email" placeholder="e.g Mfonabasiaworekun@gmail.com "
+                            type="email" pattern=".+@gmail.com" required>
+                        <span class="text-danger d-none"><i class="fa fa-triangle-exclamation"></i> Type a valid e-mail
+                            address</span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label"> Phone number </label>
+                        <input class="form-control" name="phoneNumber" placeholder="e.g 08090000000 " type="tel"
+                            maxlength="11" pattern="[0-9]{11}" required>
+                        <span class="text-danger d-none"><i class="fa fa-triangle-exclamation"></i> Number must be 11
+                            digits</span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label"> Password </label>
+                        <input class="form-control" name="password" type="password" minlength="8" id="firstPassword"
+                            required>
+                        <i id="password-view" class="fa fa-eye-slash" aria-hidden="true"
+                            onclick="togglePasswordVisibility()"></i>
+                        <span class="text-danger d-none"><i class="fa fa-triangle-exclamation"></i> Password must be at
+                            least 8 characters </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label"> Confirm password </label>
+                        <input class="form-control" name="confirmPassword" type="password" id="confirmPassword"
+                            required>
+                        <i class="fa fa-eye-slash second-eye" id="pc-view" aria-hidden="true"
+                            onclick="togglePCVisibility()"></i>
+                        <span class="text-danger d-none"><i class="fa fa-triangle-exclamation"></i> Password must be the
+                            same with the one above</span>
+                    </div>
+
+                    <div class="end mb-3">
+                        <input type="checkbox" name="terms-and-condition" required>
+                        <label for="terms-and-condition"><span>I agree to the <a href="#" class="terms-and-condition">Terms & Conditions</a> and <a
+                                href="#" class="privacyPolicy">Privacy Policy</a> </span> </label>
+                    </div>
+
+                    <button type="submit" value="Register" href="#">Register</button>
+
+                    <p>Already have an account? <a href="#" class="log_in">Log in</a> </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+
+    var myCarousel = document.querySelector('#myCarousel')
+    var carousel = new bootstrap.Carousel(myCarousel)
+
+
+    function togglePasswordVisibility() {
+        var x = document.getElementById("firstPassword");
+        let icon = document.getElementById('password-view');
+        if (x.type === "password") {
+            x.type = "text";
+            icon.className = 'fa fa-eye-slash'
+        } else {
+            x.type = "password";
+            icon.className = 'fa fa-eye'
+        }
+    }
+
+    function togglePCVisibility() {
+        var x = document.getElementById("confirmPassword");
+        let icon = document.getElementById("pc-view");
+        if (x.type === "password") {
+            x.type = "text";
+            icon.className = 'fa fa-eye-slash'
+        } else {
+            x.type = "password";
+            icon.className = 'fa fa-eye'
+        }
+    }
+
+
+
+</script>
+
+</html>

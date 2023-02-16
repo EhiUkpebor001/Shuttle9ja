@@ -1,0 +1,156 @@
+
+html, body, head, div, form{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    font-family: 'Poppins', sans-serif;
+    height: 1249px;
+    width: 1440px;
+}
+
+.second-column h2 img{
+    margin-bottom: 15px;
+}
+
+.second-column p{
+    width: 85%;
+    height: 60px;
+    font-weight: 275;
+    font-size: 20px;
+    line-height: 30px;  
+}
+
+.googleRegister{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary{
+    height: 70px;
+    width: 675px;
+    background-color: #ffffff;
+    border: 1px solid #049F5A;
+    filter: drop-shadow(30px 30px 60px rgba(0, 0, 0, 0.1));
+    backdrop-filter: blur(10px);
+}
+
+.btn-primary:hover, .btn-primary:active{
+    background-color: #ffffff !important;
+    border: 1px solid #049F5A !important;
+}
+
+.googleRegister a{
+    text-align: center;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 11px;
+    /* identical to box height, or 50% */
+    letter-spacing: -0.016em;
+
+    color: #262626;
+}
+
+.googleRegister a:hover, .googleRegister a:active{
+    color: #000000 !important;
+}
+
+.google{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.demarcation{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 9px ;
+    width: 70%;
+    margin: 38px auto 77px auto; 
+}
+
+.demarcation .firstLine, .secondLine{
+    border-bottom:  1px solid  rgba(38, 38, 38, 0.6);
+    width: 182px;
+}
+
+.form-label{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    
+    /* identical to box height */
+
+    color: #262626;
+}
+
+.form-control{
+    height: 40px;
+}
+
+input:focus{
+   border:  1px solid rgba(38, 38, 38, 0.9) !important; 
+   box-shadow: none !important;
+}
+
+input{
+    border-color:  1px solid rgba(38, 38, 38, 0.9) !important; 
+    height: 54px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.text-danger {
+    font-weight: 275;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#password-view, #pc-view{
+    cursor: pointer;
+    margin-left: 90%;
+    position: relative;
+    bottom: 30px;
+    display: block;
+}
+
+.terms-and-condition, .privacyPolicy{
+    color: #037743;
+}
+
+.end span{
+    position: relative;
+    bottom: 20px;
+}
+
+button{
+    width: 160px;
+    height: 50px;
+    background: #037743 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    color: #FFFFFF !important;
+}
+
+.registration p{
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.log_in{
+    font-weight: bold;
+    text-decoration: none;
+    color: #037743;
+}
